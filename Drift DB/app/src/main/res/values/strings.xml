@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Drifting</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="drift">Drift</string>
+    <string name="error">Error</string>
+    <string name="what_is_your_name">What is your name ?</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="next">Next</string>
+    <string name="alert_message">Alert</string>
+    <string name="account">Account</string>
+    <string name="change_username">Change Username</string>
+    <string name="change_number">Change Number</string>
+    <string name="delete_my_account">Delete my Account</string>
+    <string name="change_user_name">Change Username</string>
+    <string name="name">Name</string>
+    <string name="chats">Chats</string>
+    <string name="calls">Calls</string>
+    <string name="status">Status</string>
+    <string name="error_r">Error!!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="modes">Modes</string>
+    <string name="status_will_be_shown_here">Status will be shown here</string>
+
+</resources>

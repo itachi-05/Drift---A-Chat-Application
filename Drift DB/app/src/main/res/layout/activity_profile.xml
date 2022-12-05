@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfileImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/person"
+        />
+
+    <ImageView
+        android:id="@+id/imageView_border"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/user_profile_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.35" />
+
+
+    <ImageView
+        android:id="@+id/person_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_border"
+        app:layout_constraintEnd_toStartOf="@+id/name_state"
+        android:src="@drawable/ic_baseline_person_24"
+        />
+
+    <Button
+        android:id="@+id/change_image_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.37"
+        app:layout_constraintHeight_percent="0.05"
+        android:text="Change Image"
+        android:backgroundTint="#F8CFCF"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_border"
+        />
+
+    <TextView
+        android:id="@+id/name_state"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="30dp"
+        android:padding="3dp"
+        android:text="@string/name"
+        android:textColor="#333232"
+        android:textSize="18sp"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintStart_toEndOf="@+id/person_pic"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_border"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <EditText
+        android:id="@+id/enterYourName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="4dp"
+        app:layout_constraintWidth_percent="0.7462"
+        app:layout_constraintHeight_percent="0.05"
+        android:layout_marginTop="20dp"
+        android:hint="Set your user name"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_state" />
+
+
+    <ImageView
+        android:id="@+id/about_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterYourName"
+        app:layout_constraintEnd_toStartOf="@+id/about_state"
+        android:src="@drawable/ic_baseline_info_24"
+        />
+
+
+    <TextView
+        android:id="@+id/about_state"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:padding="3dp"
+        android:text="About"
+        android:textColor="#333232"
+        android:textSize="18sp"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintStart_toEndOf="@+id/about_pic"
+        app:layout_constraintTop_toBottomOf="@+id/enterYourName"
+        app:layout_constraintWidth_percent="0.2"/>
+
+
+    <EditText
+        android:id="@+id/enterYourStatus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="4dp"
+        app:layout_constraintWidth_percent="0.7462"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Set your Bio information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/about_state" />
+
+    <ImageView
+        android:id="@+id/phone_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterYourStatus"
+        app:layout_constraintEnd_toStartOf="@+id/number_state"
+        android:src="@drawable/ic_baseline_phone_24"
+        />
+
+
+    <TextView
+        android:id="@+id/number_state"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:padding="3dp"
+        android:text="Phone"
+        android:textColor="#333232"
+        android:textSize="18sp"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintStart_toEndOf="@id/phone_pic"
+        app:layout_constraintTop_toBottomOf="@+id/enterYourStatus"
+        app:layout_constraintWidth_percent="0.2"/>
+
+    <TextView
+        android:id="@+id/changePhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.7462"
+        android:layout_marginTop="10dp"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintTop_toBottomOf="@id/number_state"
+        />
+
+    <Button
+        android:id="@+id/save_info_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="@color/black"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePhoneNumber" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#89F3A0"
+    tools:context=".StatusFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/clickToAddStatusBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:backgroundTint="#89F3A0"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/clickToAddStatusText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Status"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:letterSpacing="0.01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/clickToAddStatusBtn"/>
+
+        <ImageView
+            android:id="@+id/addButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="@+id/clickToAddStatusBtn"
+            app:layout_constraintStart_toEndOf="@id/clickToAddStatusText2"
+            />
+
+
+        <TextView
+            android:id="@+id/clickToAddStatusText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to Add Status"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/black"
+            android:letterSpacing="0.01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/clickToAddStatusBtn"/>
+
+        <ImageView
+            android:id="@+id/StatusPosition"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#89F3A0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clickToAddStatusBtn" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

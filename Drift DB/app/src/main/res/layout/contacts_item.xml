@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    >
+
+
+
+    <ImageButton
+        android:id="@+id/clickToChatBtn"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.88"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/contactsProfileImage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/person"
+        android:fitsSystemWindows="true"
+        />
+
+
+    <TextView
+        android:id="@+id/contactsName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/contactsProfileImage"
+        app:layout_constraintBottom_toTopOf="@id/contactsNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:hint="Contact's Name"
+        />
+
+    <TextView
+        android:id="@+id/contactsNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:hint="Contact's Status"
+        android:textColor="#676565"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/contactsProfileImage"
+        app:layout_constraintTop_toBottomOf="@+id/contactsName" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

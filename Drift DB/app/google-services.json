@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "791303396382",
+    "firebase_url": "https://drift-db-f9bac-default-rtdb.firebaseio.com",
+    "project_id": "drift-db-f9bac",
+    "storage_bucket": "drift-db-f9bac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791303396382:android:a07ec83e8c2c6160ec620f",
+        "android_client_info": {
+          "package_name": "com.example.driftdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791303396382-e3dgde5kl14g2666urelfjg3rjr1ktu3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.driftdb",
+            "certificate_hash": "413ceb7dbb25b343af5c7db6af40b4c0ecb2a82d"
+          }
+        },
+        {
+          "client_id": "791303396382-5fdruq3td31rekv6cfvh7kfn7g2vcor0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlmNVW9KdqrHGYf4W8FIqCWZb2IOWQKpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791303396382-5fdruq3td31rekv6cfvh7kfn7g2vcor0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
